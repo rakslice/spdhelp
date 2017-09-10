@@ -57,6 +57,8 @@ def main():
     options = parse_args()
     input_filename = options.input_filename
 
+    # For more info see https://en.wikipedia.org/wiki/Serial_presence_detect#DDR3_SDRAM
+
     print "Reading hex digits from %s" % input_filename
     spd_bytes = read_hexdump(input_filename)
 
